@@ -190,7 +190,6 @@
                     <connections>
                         <outlet property="commentField" destination="hIM-cy-pv0" id="hCe-iL-Bj7"/>
                         <outlet property="imageView" destination="46F-4T-A1f" id="ED3-lm-uHa"/>
-                        <outlet property="onCameraButton" destination="46F-4T-A1f" id="VjZ-Bi-RAj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJK-gs-f4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
