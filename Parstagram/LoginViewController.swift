@@ -29,7 +29,7 @@ class LoginViewController: UIViewController
             (user,error) in
             if user != nil
             {
-                self.performSegue(withIdentifier: "loginSeque", sender: nil)
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
             else
             {
@@ -49,7 +49,7 @@ class LoginViewController: UIViewController
                 (success, error) in
             if success 
             {
-                self.performSegue(withIdentifier: "loginSeque", sender: nil)
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
             else
             {
