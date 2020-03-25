@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5699AC28242BCA0B00967C53 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5699AC27242BCA0B00967C53 /* CommentCell.swift */; };
 		56A6498C2422F68F0085A031 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6498B2422F68F0085A031 /* PostCell.swift */; };
 		56D9DBCF241C5CAD000A9317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9DBCE241C5CAD000A9317 /* AppDelegate.swift */; };
 		56D9DBD1241C5CAD000A9317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9DBD0241C5CAD000A9317 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		012ECF25202207E545487205 /* Pods_Parstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5699AC27242BCA0B00967C53 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		56A6498B2422F68F0085A031 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		56D9DBCB241C5CAD000A9317 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D9DBCE241C5CAD000A9317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				56FCEE4924218D7D0032EB77 /* FeedViewController.swift */,
 				56FCEE4D2421A32D0032EB77 /* CameraViewController.swift */,
 				56A6498B2422F68F0085A031 /* PostCell.swift */,
+				5699AC27242BCA0B00967C53 /* CommentCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				56FCEE4A24218D7D0032EB77 /* FeedViewController.swift in Sources */,
 				56D9DBD1241C5CAD000A9317 /* SceneDelegate.swift in Sources */,
 				56A6498C2422F68F0085A031 /* PostCell.swift in Sources */,
+				5699AC28242BCA0B00967C53 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
