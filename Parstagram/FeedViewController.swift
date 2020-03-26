@@ -170,6 +170,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func onLogoutButton(_ sender: Any)
     {
+        PFUser.logOutInBackground(block:
+            {
+            
+            (error) in
+            
+            if let error = error
+            {
+                print(error.localizedDescription)
+            }
+            else
+            {
+                print("Successful logout")
+                
+                let main = UIStoryboard(name: "Main", bundle: nil)
+                let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+                let sceneDelegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+                sceneDelegate.window?.rootViewController = loginViewController
+            }
+        })
+        
+        /*
         PFUser.logOut()
         
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -177,5 +198,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let delegate = UIApplication.shared.delegate as! AppDelegate
         
         delegate.window?.rootViewController = loginVeiwController
+         */
     }
 }

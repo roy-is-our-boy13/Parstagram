@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import AlamofireImage
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate
 {
@@ -14,12 +16,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)
     {
-        guard let _ = (scene as? UIWindowScene)
+        //Rought draph code.
+        guard let windowScene = (scene as? UIWindowScene)
+            else
+            {
+                return
+            }
+        if PFUser.current() != nil
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.window = UIWindow(windowScene: windowScene)
+            
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "FeedNavigationController")
+            print("window %@", window)
+            self.window?.makeKeyAndVisible()
+        }
+        
+        /*guard let _ = (scene as? UIWindowScene)
            
         else
         {
             return
-        }
+        }*/
     }
 
     func sceneDidDisconnect(_ scene: UIScene)
